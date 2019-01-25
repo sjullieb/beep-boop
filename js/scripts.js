@@ -9,11 +9,11 @@ var beepBoop = function(number, name){
   }
 
   if (number % 3 === 0){
-    return("'I'm sorry" + userName + ". I'm afraid I can't do that.'");
+    return("I'm sorry" + userName + ". I'm afraid I can't do that.");
   } else if (stringNumber.includes("1")) {
-    return("'Boop!'");
+    return("Boop!");
   } else if (stringNumber.includes("0")) {
-    return("'Beep!'");
+    return("Beep!");
   } else {
     return(stringNumber);
   }
@@ -44,7 +44,18 @@ $(document).ready(function(){
 
       //$("#result").text(outputText.join(", "));
       outputText.forEach(function(reply){
-        $("ul").append("<li>" + reply + "</li>");
+        var imgTagText = "";
+        if (reply.includes("sorry")){
+          imgTagText = "<img src='img/sorry.jpg' alt='Sorry...'>";
+        }
+        else if (reply.includes("Beep")) {
+          imgTagText = "<img src='img/beep.jpg' alt='Beep!'>";
+        }
+        else if (reply.includes("Boop")) {
+          imgTagText = "<img src='img/boop.jpg' alt='Boop!'>";
+        }
+
+        $("ul").append("<li>" + imgTagText + reply + "</li>");
       });
 
       $(".input").hide();
