@@ -11,18 +11,25 @@
   <body>
     <div class="container">
       <h1>Beep! Boop!</h1>
-      <h3>Enter your number and check what the robot replies</h3>
-      <form class="mainForm">
-        <div class="form-group">
-          <label for="number">Your number:</label>
-          <input id="number" type="number" name="" value="">
-          <button id="submit" type="submit" name="button">Go</button>
-        </div>
-      </form>
 
-      <p>
-        <span id="result"></span>
-      </p>
+      <div class="input">
+        <h3>Enter a number and check how the robot converts the numbers from 0 to yours.</h3>
+        <form class="mainForm">
+          <div class="form-group">
+            <label for="number">Your number:</label>
+            <input id="number" type="number" name="" value="">
+            <button id="submit" type="submit" name="button">Go</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="result">
+        <h3>Here is the robot's reply</h3>
+        <p>
+          <span id="result"></span>
+        </p>
+        <button id="again" type="button" name="button">Again</button>
+      </div>
     </div>
   </body>
 </html>

@@ -27,7 +27,15 @@ $(document).ready(function(){
     for(var index = 0; index <= inputNumber; index++){
       outputText.push(beepBoop(index));
     }
-
+    $(".input").hide();
+    $(".result").show();
     $("#result").text(outputText.join(", "));
+  });
+
+  $("#again").click(function(){
+    $(".input").show();
+    $(".result").hide();
+    $("#number").text("");
+    $("#number").focus();
   });
 });
