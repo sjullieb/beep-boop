@@ -16,6 +16,8 @@ var beepBoop = function(number){
 };
 
 $(document).ready(function(){
+  $("#number").focus();
+
   $("form").submit(function(event){
     event.preventDefault();
 
