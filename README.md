@@ -1,21 +1,42 @@
-# _{Application Name}_
-#### _{Brief description of application}, {Date of current version}_
+# _Beep Boop_
+#### _The application returns a range of numbers from 0 to the user's inputted number by specific rules, 01/25/2019_
 #### By _**Yulia Shidlovskaya**_
 ## Description
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This is a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+
+* Numbers that contain a 0 are replaced (all digits) with "Beep!"
+* Numbers that contain a 1 are replaced (all digits) with "Boop!"
+* Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+
+These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+
+## Specifications
+| Behavior                            | Input Examples | Output Examples  |
+|-------------------------------------|----------------|------------------|
+| Returns number itself if it doesn't contain 0 or 1, and it is not divisible by 3                             | 4              | 4                |
+| Contains 0, but not 1, not divisible by 3                          | 0              | "Beep!"          |
+| Contains 1, not divisible by 3                          | 1              | "Boop!"          |
+| Divisible by 3                       | 3              | "I'm sorry..."   |
+| Contains 0 and 1, not divisible by 3                    | 10             | "Boop!"          |
+| Contains 0 and 1 and divisible by 3 | 30             | "I'm sorry..."   |
+
 ## Setup/Installation Requirements
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-## Known Bugs
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+
+* Click the green button "Clone or download" on the repository page.
+* To download the repository choose "Open in Desktop" or "Download Zip".
+* To clone the repository use the provided web URL to run the command "git clone [web URL]" in the terminal
+(note: git should be installed on your PC).  For more information visit GitHub Help section Cloning a repository from GitHub:
+https://help.github.com/articles/cloning-a-repository-from-github/
+* Open index.html in any web browser.
+
 ## Support and contact details
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+
+_Please contact me: sjullieb@gmail.com_
+
 ## Technologies Used
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+
+_HTML, CSS, Bootstrap, JavaScript, jQuery_
+
 ### License
 MIT
 
