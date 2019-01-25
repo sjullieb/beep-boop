@@ -39,10 +39,13 @@ $(document).ready(function(){
       }
 
       if (userName) {
-        $(".name").text(userName + "! ");
+        $(".name").text(userName + ",");
       }
 
-      $("#result").text(outputText.join(", "));
+      //$("#result").text(outputText.join(", "));
+      outputText.forEach(function(reply){
+        $("ul").append("<li>" + reply + "</li>");
+      });
 
       $(".input").hide();
       $(".result").show();
