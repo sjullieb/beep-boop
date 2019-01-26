@@ -44,18 +44,42 @@ $(document).ready(function(){
 
       //$("#result").text(outputText.join(", "));
       outputText.forEach(function(reply){
-        var imgTagText = "";
+        var beforeReplyTag = "";
+        var afterReplyTag = "";
+        var imgTag = "";
+        var isTextReply = true;
+        var textReply = "";
+
+        textReply = reply;
+
         if (reply.includes("sorry")){
-          imgTagText = "<img src='img/sorry.jpg' alt='Sorry...'>";
+          imgTag = "<img src='img/sorry.jpg' alt='Sorry...'> ";
         }
         else if (reply.includes("Beep")) {
-          imgTagText = "<img src='img/beep.jpg' alt='Beep!'>";
+          imgTag = "<img src='img/beep.jpg' alt='Beep!'> ";
         }
         else if (reply.includes("Boop")) {
-          imgTagText = "<img src='img/boop.jpg' alt='Boop!'>";
+          imgTag = "<img src='img/boop.jpg' alt='Boop!'> ";
+        }
+        else {
+          beforeReplyTag = "<em>";
+          afterReplyTag = "</em>";
+          isTextReply = false;
         }
 
-        $("ul").append("<li>" + imgTagText + reply + "</li>");
+        if ($("#showOptions").val() === "2"){
+          // text only
+          imgTag = "";
+        }
+
+        if ($("#showOptions").val() === "3" && isTextReply){
+          // images only
+          textReply = "";
+        }
+
+        console.log("<li>" + imgTag + beforeReplyTag + textReply + afterReplyTag + "</li>");
+
+        $("ul").append("<li>" + imgTag + beforeReplyTag + textReply + afterReplyTag + "</li>");
       });
 
       $(".input").hide();
@@ -68,5 +92,6 @@ $(document).ready(function(){
     $(".result").hide();
     $("#number").val("");
     $("#number").focus();
+    $("ul").empty();
   });
 });
