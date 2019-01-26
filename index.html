@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <!-- <div class="jumbotron"> -->
         <h1>Beep! Boop!</h1>
 
         <div class="input">
@@ -19,15 +19,16 @@
 
             <div class="form-group">
               <label for="name">Your name:</label>
-              <input id="name" type="text">
+              <input id="name" class="form-control" type="text">
             </div>
 
             <div class="form-group">
               <label for="number">Your number:</label>
-              <input id="number" type="number">
+              <input id="number" class="form-control" type="number">
             </div>
 
             <div class="form-group">
+              <label for="showOptions">Choose how to show the results:</label>
               <select class="form-control" id="showOptions">
                 <option value="1">Images and text</option>
                 <option value="2">Text only</option>
@@ -35,7 +36,7 @@
               </select>
             </div>
 
-            <button id="submit" type="submit" name="button">Go</button>
+            <button id="submit" class="btn btn-info" type="submit" name="button">Go</button>
           </form>
         </div>
 
@@ -46,9 +47,9 @@
             <span id="result"></span>
             <ul></ul>
           </p>
-          <button id="again" type="button" name="button">Again</button>
+          <button id="again" class="btn btn-info" type="button" name="button">Again</button>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
