@@ -14,11 +14,11 @@ These exceptions are written from least to most important. The first exception s
 | Behavior                            | Input Examples | Output Examples  |
 |-------------------------------------|----------------|------------------|
 | Returns a number itself if it doesn't contain 0 or 1, and it is not divisible by 3                             | 4              | 4                |
-| Returns "Beep!" if a number contains 0, but not 1, and it is not divisible by 3                          | 0              | "Beep!"          |
+| Returns "Beep!" if a number contains 0, but not 1, and it is not divisible by 3                          | 20              | "Beep!"          |
 | Returns "Boop!" if a number contains 1, and it is not divisible by 3                          | 1              | "Boop!"          |
 | Returns "I'm sorry..." if a number is divisible by 3                       | 3              | "I'm sorry..."   |
 | Returns "Boop!" if a number contains 0 and 1, and it is not divisible by 3                    | 10             | "Boop!"          |
-| Returns "I'm sorry..." if a number contains 0 and 1, and is divisible by 3 | 30             | "I'm sorry..."   |
+| Returns "I'm sorry..." if a number contains 0, and is divisible by 3 | 30             | "I'm sorry..."   |
 
 ## Setup/Installation Requirements
 
