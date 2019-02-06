@@ -16,7 +16,7 @@ var beepBoop = function(number, name){
     return("Beep!");
   } else {
     return(stringNumber);
-  }
+  } 
 };
 
 $(document).ready(function(){

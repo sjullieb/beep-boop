@@ -9,6 +9,7 @@ This is a web application that takes a number from a user and returns a range of
 * Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 
 These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+Number "0" should be replaced with "Beep!"
 
 ## Specifications
 | Behavior                            | Input Examples | Output Examples  |
@@ -19,6 +20,7 @@ These exceptions are written from least to most important. The first exception s
 | Returns "I'm sorry..." if a number is divisible by 3                       | 3              | "I'm sorry..."   |
 | Returns "Boop!" if a number contains 0 and 1, and it is not divisible by 3                    | 10             | "Boop!"          |
 | Returns "I'm sorry..." if a number contains 0, and is divisible by 3 | 30             | "I'm sorry..."   |
+| Returns "Beep!" if a number is 0 | 0 | "Beep!" |
 
 ## Setup/Installation Requirements
 
