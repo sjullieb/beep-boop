@@ -8,7 +8,7 @@ var beepBoop = function(number, name){
     userName = ", " + userName;
   }
 
-  if (number % 3 === 0){
+  if (number % 3 === 0 && number !== 0){
     return("I'm sorry" + userName + ". I'm afraid I can't do that.");
   } else if (stringNumber.includes("1")) {
     return("Boop!");
